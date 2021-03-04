@@ -1,9 +1,14 @@
+<<<<<<< Updated upstream
 <mxfile host="65bd71144e" modified="2021-03-04T12:08:10.515Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.2 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" etag="57RqxRjXqu910iHOoQ7Q" version="14.2.4" type="embed">
+=======
+<mxfile host="65bd71144e" modified="2021-03-02T11:27:20.843Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.2 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" version="14.2.4" etag="tUK3XDzj2_Se-UAELAwI" type="embed">
+>>>>>>> Stashed changes
     <diagram id="PtgE6ed1ztkoCwPvhWP1" name="ページ1">
         <mxGraphModel dx="1208" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
+<<<<<<< Updated upstream
                 <mxCell id="2" value="Users" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;sketch=0;" parent="1" vertex="1">
                     <mxGeometry x="80" y="40" width="200" height="240" as="geometry">
                         <mxRectangle x="40" y="40" width="70" height="30" as="alternateBounds"/>
@@ -67,6 +72,31 @@
                 </mxCell>
                 <mxCell id="51" value="user.id&#10;items.id" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=14;verticalAlign=top;resizable=0;rotatable=0;part=1;spacingTop=0;spacingBottom=0;spacing=4;" vertex="1" parent="50">
                     <mxGeometry y="30" width="200" height="80" as="geometry"/>
+=======
+                <mxCell id="2" value="Users" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="40" width="160" height="150" as="geometry">
+                        <mxRectangle x="40" y="40" width="70" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="Nickname&#10;Email&#10;Password&#10;Firstn_name&#10;Last_name" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=14;verticalAlign=top;resizable=0;rotatable=0;part=1;spacingTop=0;spacingBottom=0;spacing=4;" vertex="1" parent="2">
+                    <mxGeometry y="30" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Items" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="35" width="160" height="150" as="geometry">
+                        <mxRectangle x="40" y="40" width="70" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="Product&#10;Image&#10;Describe&#10;Detail&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=14;verticalAlign=top;resizable=0;rotatable=0;part=1;spacingTop=0;spacingBottom=0;spacing=4;" vertex="1" parent="24">
+                    <mxGeometry y="30" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Buy" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="280" width="160" height="150" as="geometry">
+                        <mxRectangle x="40" y="40" width="70" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="Nickname&#10;Email&#10;Password&#10;Firstn_name&#10;Last_name" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=14;verticalAlign=top;resizable=0;rotatable=0;part=1;spacingTop=0;spacingBottom=0;spacing=4;" vertex="1" parent="28">
+                    <mxGeometry y="30" width="160" height="120" as="geometry"/>
+>>>>>>> Stashed changes
                 </mxCell>
             </root>
         </mxGraphModel>
