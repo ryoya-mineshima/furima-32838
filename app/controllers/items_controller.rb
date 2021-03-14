@@ -6,7 +6,6 @@ class ItemsController < ApplicationController
 
   def new
     @item = Item.new
-    @article = Article.new
   end
 
   def create
