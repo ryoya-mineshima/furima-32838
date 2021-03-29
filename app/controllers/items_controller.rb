@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
   before_action :set_path, only: [:edit, :update, :destroy]
 
   def index
-    @items = Item.all.order("created_at DESC")
+    @items = Item.all.order("created_at DESC") 
   end
 
   def new
@@ -24,6 +24,9 @@ class ItemsController < ApplicationController
   end
 
   def edit
+    if @item.purchase_record.present?
+      redirect_to root_path
+    end
   end
 
   def update
@@ -42,7 +45,16 @@ class ItemsController < ApplicationController
 
   private
   def item_params
-    params.require(:item).permit(:name, :description, :category_id, :condition_id, :shipping_cost_id, :prefecture_id, :shipping_day_id, :price, :image).merge(user_id: current_user.id)
+    params.require(:item).permit(
+      :name, 
+      :description, 
+      :category_id, 
+      :condition_id, 
+      :shipping_cost_id, 
+      :prefecture_id, 
+      :shipping_day_id, 
+      :price, :image
+    ).merge(user_id: current_user.id)
   end
 
   def set_item
@@ -51,5 +63,5 @@ class ItemsController < ApplicationController
 
   def set_path
     redirect_to root_path if current_user.id != @item.user_id
-    end
   end
+end
