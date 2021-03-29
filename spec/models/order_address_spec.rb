@@ -13,6 +13,11 @@ RSpec.describe OrderAddress, type: :model do
       it "全ての値が正しく入力されていれば購入できること" do
         expect(@order_address).to be_valid
       end
+
+      it "buildingが空でも購入できること" do
+        @order_address.building = nil
+        expect(@order_address).to be_valid
+      end
     end
 
     context "商品購入がうまくいかない時" do
@@ -44,11 +49,6 @@ RSpec.describe OrderAddress, type: :model do
         @order_address.address = nil
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include("Address can't be blank")
-      end
-
-      it "buildingが空でも購入できること" do
-        @order_address.building = nil
-        expect(@order_address).to be_valid
       end
 
       it "phone_numberが空だと購入できない" do
